@@ -1,9 +1,12 @@
 # BREADTH-FIRST-SEARCH
 <h1>ExpNo 3 : Implement Breadth First Search Traversal of a Graph</h1> 
-<h3>Name:  </h3>
-<h3>Register Number: </h3>
+
+<h3>Name: MADHAN BABU P</h3>
+<h3>Register Number: 212222230075</h3>
+
 <H3>Aim:</H3>
 <p>To Implement Breadth First Search Traversal of a Graph using Python 3.</p>
+
 <h3>Theory:</h3>
 <p>Breadth-First Traversal (or Search) for a graph is like the Breadth-First Traversal of a tree.
 The only catch here is that, unlike trees, graphs may contain cycles so that we may come to the same node again. To avoid processing a node more than once, we divide the vertices into two categories:
@@ -56,6 +59,7 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 
 
 <hr>
+
 <h2>Algorithm:</h2>
 <hr>
 <ol>
@@ -67,8 +71,9 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 <li>Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes.</li>
 
 </ol>
-## PROGRAM: 
-```
+
+## program
+```py
 from collections import deque
 from collections import defaultdict
 
@@ -102,7 +107,9 @@ visited = defaultdict(bool)
 traversedpath = bfs(graph,start,visited,path)
 print(traversedpath)
 ```
+
 <hr>
+
 <h3>Sample Input</h3>
 <hr>
 7 9 <BR>
@@ -116,6 +123,7 @@ D E <BR>
 D G <BR>
 G F <BR>
 <hr>
+
 <h3>Sample Output</h3>
 <hr>
 ['A', 'B', 'C', 'F', 'E', 'D', 'G']
@@ -123,6 +131,7 @@ G F <BR>
 <hr>
 
 <hr>
+
 <h3>Sample Input</h3>
 <hr>
 5 6 <BR>
@@ -133,10 +142,12 @@ G F <BR>
 2 4 <BR>
 3 4 <BR>
 <hr>
+
 <h3>Sample Output</h3>
 <hr>
 ['0', '1', '2', '3', '4']
 <hr>
+
 <h3>Result:</h3>
 <hr>
 <p>Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.</p>
